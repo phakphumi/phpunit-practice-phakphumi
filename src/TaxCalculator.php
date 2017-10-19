@@ -2,7 +2,7 @@
 
 class TaxCalculator {
 
-    public function taxCalculator($revenue){
+    public function evaluate($revenue){
 
         $tax = '';
 
@@ -14,7 +14,7 @@ class TaxCalculator {
             if ($revenue <= 150000) {
                 $tax = 0;
 
-            } elseif ($this->revenue <= 300000) {
+            } elseif ($revenue <= 300000) {
                 $tax = ($revenue - 150000) * 0.05;
 
             } elseif ($revenue <= 500000) {
